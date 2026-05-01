@@ -120,8 +120,17 @@ header.scrolled {
 }
 
 .header-logo {
-  height: 40px; /* Adjust based on exact logo proportions */
-  width: auto;
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(220, 174, 86, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(220, 174, 86, 0.8);
 }
 
 .logo-text {
