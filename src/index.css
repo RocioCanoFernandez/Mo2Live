@@ -686,3 +686,74 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* Print / PDF Dossier Styles */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-white) !important;
+  }
+
+  header {
+    position: static;
+    background-color: transparent !important;
+    padding: 2rem 5%;
+    page-break-inside: avoid;
+  }
+
+  .header-controls {
+    display: none !important;
+  }
+
+  .hero {
+    height: 100vh;
+    page-break-after: always;
+  }
+
+  .hero-buttons {
+    display: none !important;
+  }
+
+  section {
+    padding: 4rem 5%;
+    page-break-inside: avoid;
+  }
+
+  .video-container, 
+  .contact-form, 
+  .watch-section .btn-outline {
+    display: none !important;
+  }
+
+  .concept-card, 
+  .why-item, 
+  .ideal-item, 
+  .tech-column {
+    border: 1px solid rgba(220, 174, 86, 0.3) !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .gallery-section {
+    page-break-before: always;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    padding: 2rem 5%;
+    page-break-inside: avoid;
+  }
+}
