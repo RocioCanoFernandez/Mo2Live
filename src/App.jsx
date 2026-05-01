@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { translations } from './translations';
-import { Globe, Headphones, SlidersHorizontal, Music, MapPin, Youtube, Mail, Instagram, ArrowRight, PlayCircle } from 'lucide-react';
+import { Globe, Headphones, SlidersHorizontal, Music, MapPin, Mail, ArrowRight, PlayCircle } from 'lucide-react';
+import { FaYoutube, FaInstagram } from 'react-icons/fa';
 import './index.css';
 
 function App() {
@@ -205,7 +206,7 @@ function App() {
           ></iframe>
         </div>
         <a href="https://www.youtube.com/watch?v=gXX4BsDyIC4" target="_blank" rel="noopener noreferrer" className="btn btn-outline fade-in" style={{ marginTop: '2rem' }}>
-          <Youtube size={18} style={{ marginRight: '8px' }}/> {t.watch.btnYoutube}
+          <FaYoutube size={18} style={{ marginRight: '8px' }}/> {t.watch.btnYoutube}
         </a>
       </section>
 
@@ -242,10 +243,10 @@ function App() {
 
           <div className="social-links fade-in">
             <a href="https://www.instagram.com/mo2live.music/" target="_blank" rel="noopener noreferrer" className="social-link">
-              <Instagram size={24} /> @mo2live.music
+              <FaInstagram size={24} /> @mo2live.music
             </a>
             <a href="https://www.youtube.com/@MO2livemusic" target="_blank" rel="noopener noreferrer" className="social-link">
-              <Youtube size={24} /> @MO2livemusic
+              <FaYoutube size={24} /> @MO2livemusic
             </a>
           </div>
         </div>
