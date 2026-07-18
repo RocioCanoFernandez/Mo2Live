@@ -2,10 +2,10 @@ export const translations = {
   en: {
     hero: {
       title: "MO²LIVE",
-      subtitle: "Live Sonic Experience for Premium Spaces",
-      tagline: "Minimal · Elegant · Immersive",
+      subtitle: "Contemporary Experimental Duo",
+      tagline: "Fusing cool jazz, afro-jazz, afro-latin rhythms, and live electronica",
       btnWatch: "Watch & Listen",
-      btnBooking: "Booking"
+      btnBooking: "Request Proposal"
     },
     about: {
       title: "Sound That Elevates The Space",
@@ -85,12 +85,12 @@ export const translations = {
     idealFor: {
       title: "Ideal For",
       items: [
-        "Luxury & Boutique Events",
-        "High-End Brand Activations",
-        "Exclusive Corporate Experiences",
-        "Fashion Shows & Art Exhibitions",
-        "Premium Hotels, Rooftops & Private Venues",
-        "Curated Cultural Programs"
+        { title: "Premium Hotels, Rooftops & Private Venues", desc: "Sophisticated atmospheres for receptions, dinners, and sunset sessions." },
+        { title: "Exclusive Corporate Experiences", desc: "Live music tailored for business meetings and brand presentations." },
+        { title: "High-End Brand Activations", desc: "A sonic and visual experience for product launches and openings." },
+        { title: "Luxury & Boutique Events", desc: "A contemporary instrumental proposal for unique celebrations." },
+        { title: "Fashion Shows & Art Exhibitions", desc: "Live music that connects with the aesthetic narrative of the production." },
+        { title: "Curated Cultural Programs", desc: "An instrumental live act blending jazz, afro-latin rhythms, and electronica." }
       ]
     },
     format: {
@@ -130,7 +130,13 @@ export const translations = {
     },
     watch: {
       title: "Watch & Listen",
-      btnYoutube: "Explore our Channel"
+      btnYoutube: "Explore our Channel",
+      btnSpotify: "Listen on Spotify",
+      videos: [
+        { title: "Live Session I - Vibe" },
+        { title: "Live Session II - Rhythm" },
+        { title: "Live Session III - Flow" }
+      ]
     },
     booking: {
       title: "Inquiries & Booking",
@@ -138,7 +144,7 @@ export const translations = {
       formLabelCompany: "Company or Venue",
       formLabelEmail: "Email Address",
       formLabelDetails: "Event Details & Vision",
-      btnSend: "Send Inquiry"
+      btnSend: "Request Proposal"
     },
     footer: {
       title: "MO²LIVE",
@@ -149,10 +155,10 @@ export const translations = {
   es: {
     hero: {
       title: "MO²LIVE",
-      subtitle: "Experiencia Sonora en Directo para Espacios Premium",
-      tagline: "Minimalista · Elegante · Inmersiva",
+      subtitle: "Dúo experimental contemporáneo",
+      tagline: "Fusionando cool jazz, afro jazz, ritmos afro-latinos y electrónica en vivo",
       btnWatch: "Ver y escuchar",
-      btnBooking: "Contratación"
+      btnBooking: "Solicitar propuesta"
     },
     about: {
       title: "Sonido Que Eleva El Espacio",
@@ -232,12 +238,12 @@ export const translations = {
     idealFor: {
       title: "Ideal Para",
       items: [
-        "Eventos de Lujo y Boutique",
-        "Activaciones de Marcas de Alto Nivel",
-        "Experiencias Corporativas Exclusivas",
-        "Desfiles de Moda y Exposiciones de Arte",
-        "Hoteles Premium, Rooftops y Espacios Privados",
-        "Programas Culturales Seleccionados"
+        { title: "Hoteles premium, rooftops y espacios privados", desc: "Ambientes sofisticados para recepciones, cenas y sunset sessions." },
+        { title: "Experiencias corporativas", desc: "Música en directo adaptada a eventos de empresa y presentaciones de marca." },
+        { title: "Activaciones de marca", desc: "Una experiencia sonora y visual para lanzamientos, inauguraciones y presentaciones de producto." },
+        { title: "Eventos de lujo y experiencias boutique", desc: "Una propuesta instrumental contemporánea para celebraciones que buscan un formato diferente." },
+        { title: "Moda, arte y espacios culturales", desc: "Música en directo para desfiles, exposiciones e instalaciones." },
+        { title: "Festivales y programaciones musicales", desc: "Un directo instrumental con influencias de jazz, ritmos afrolatinos y electrónica." }
       ]
     },
     format: {
@@ -277,7 +283,13 @@ export const translations = {
     },
     watch: {
       title: "Ver y Escuchar",
-      btnYoutube: "Explorar nuestro Canal"
+      btnYoutube: "Explorar nuestro Canal",
+      btnSpotify: "Escuchar en Spotify",
+      videos: [
+        { title: "Live Session I - Ambiente" },
+        { title: "Live Session II - Ritmo" },
+        { title: "Live Session III - Energía" }
+      ]
     },
     booking: {
       title: "Consultas y Contratación",
@@ -285,7 +297,7 @@ export const translations = {
       formLabelCompany: "Empresa o Espacio",
       formLabelEmail: "Correo Electrónico",
       formLabelDetails: "Detalles y Visión del Evento",
-      btnSend: "Enviar Consulta"
+      btnSend: "Solicitar Propuesta"
     },
     footer: {
       title: "MO²LIVE",

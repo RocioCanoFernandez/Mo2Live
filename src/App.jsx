@@ -1,13 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { translations } from './translations';
 import { Globe, Headphones, SlidersHorizontal, Music, MapPin, Mail, ArrowRight, PlayCircle } from 'lucide-react';
-import { FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaYoutube, FaInstagram, FaLinkedin, FaTiktok, FaSpotify } from 'react-icons/fa';
 import './index.css';
 
 function App() {
   const [lang, setLang] = useState('en');
   const [scrolled, setScrolled] = useState(false);
+  const [formStatus, setFormStatus] = useState('');
+  const [expandedIdeal, setExpandedIdeal] = useState(null);
   const t = translations[lang];
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setFormStatus('Sending...');
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "d0483143-0999-43c5-83d8-b10ceef66c7d");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setFormStatus('Message sent successfully!');
+        event.target.reset();
+        setTimeout(() => setFormStatus(''), 5000);
+      } else {
+        setFormStatus(data.message || 'Error sending message. Please try again.');
+      }
+    } catch (error) {
+      setFormStatus('Error sending message. Please try again later.');
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,8 +94,119 @@ function App() {
         </div>
       </section>
 
+      {/* IDEAL FOR */}
+      <section className="ideal-section" id="ideal">
+        <div className="editorial-line"></div>
+        <div className="editorial-number">V</div>
+        <h2 className="section-title fade-in">{t.idealFor.title}</h2>
+        <div className="ideal-grid">
+          {t.idealFor.items.map((item, i) => (
+            <div 
+              key={i} 
+              className={`ideal-item fade-in ${expandedIdeal === i ? 'expanded' : ''}`} 
+              style={{ transitionDelay: `${i * 0.05}s` }}
+              onClick={() => setExpandedIdeal(expandedIdeal === i ? null : i)}
+            >
+              <div className="ideal-item-header">
+                <div className="ideal-item-icon"><MapPin size={18} /></div>
+                <span>{item.title}</span>
+                <span className="ideal-item-toggle">{expandedIdeal === i ? '-' : '+'}</span>
+              </div>
+              {expandedIdeal === i && (
+                <div className="ideal-item-desc">
+                  {item.desc}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* WHY MO2LIVE */}
+      <section className="why-section" id="why">
+        <div className="editorial-number">IV</div>
+        <h2 className="section-title fade-in">{t.whyUs.title}</h2>
+        <p className="why-intro fade-in">{t.whyUs.subtitle}</p>
+        
+        <div className="why-container">
+          <div className="why-list">
+            {t.whyUs.items.map((item, i) => {
+              const icons = [<SlidersHorizontal />, <Headphones />, <Globe />, <Music />, <ArrowRight />];
+              return (
+                <div key={i} className="why-item fade-in" style={{ transitionDelay: `${i * 0.1}s` }}>
+                  <div className="why-item-icon">
+                    {icons[i]}
+                  </div>
+                  <div className="why-item-content">
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="why-image fade-in" style={{ transitionDelay: '0.4s' }}>
+            <img src="/IMG-20260501-WA0008.jpg" alt="MO2LIVE Performance" />
+          </div>
+        </div>
+      </section>
+
+      {/* WATCH & LISTEN */}
+      <section className="watch-section" id="watch">
+        <h2 className="section-title fade-in">{t.watch.title}</h2>
+        
+        <div className="videos-grid fade-in">
+          <div className="video-main">
+            <div className="video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/gXX4BsDyIC4" 
+                title={t.watch.videos[0].title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
+            </div>
+            <p className="video-title">{t.watch.videos[0].title}</p>
+          </div>
+          <div className="video-sub-container">
+            <div className="video-sub">
+              <div className="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/gXX4BsDyIC4" 
+                  title={t.watch.videos[1].title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="video-title">{t.watch.videos[1].title}</p>
+            </div>
+            <div className="video-sub">
+              <div className="video-container">
+                <iframe 
+                  src="https://www.youtube.com/embed/gXX4BsDyIC4" 
+                  title={t.watch.videos[2].title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="video-title">{t.watch.videos[2].title}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="watch-buttons fade-in" style={{ marginTop: '3rem', display: 'flex', gap: '1rem', justifyItems: 'center', justifyContent: 'center' }}>
+          <a href="https://www.youtube.com/@MO2livemusic" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            <FaYoutube size={18} style={{ marginRight: '8px' }}/> {t.watch.btnYoutube}
+          </a>
+          <a href="https://open.spotify.com/artist/6JPKKMgXvydvrjDbnmRxON" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            <FaSpotify size={18} style={{ marginRight: '8px' }}/> {t.watch.btnSpotify}
+          </a>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section className="about-section">
+        <div className="editorial-line"></div>
+        <div className="editorial-number">I</div>
         <div className="fade-in">
           <h2 className="section-title">{t.about.title}</h2>
           <p className="about-text" style={{ marginBottom: '1.5rem' }}>{t.about.p1}</p>
@@ -75,7 +215,9 @@ function App() {
       </section>
 
       {/* SIGNATURE CONCEPT */}
-      <section className="concept-section">
+      <section className="concept-section" id="concept">
+        <div className="editorial-line"></div>
+        <div className="editorial-number">III</div>
         <h2 className="section-title fade-in">{t.concept.title}</h2>
         <p className="why-intro fade-in" style={{ marginBottom: '4rem' }}>{t.concept.subtitle}</p>
         <div className="concept-grid">
@@ -89,44 +231,9 @@ function App() {
         <p className="concept-outro fade-in">{t.concept.outro}</p>
       </section>
 
-      {/* WHY MO2LIVE */}
-      <section className="why-section" id="why">
-        <h2 className="section-title fade-in">{t.whyUs.title}</h2>
-        <p className="why-intro fade-in">{t.whyUs.subtitle}</p>
-        
-        <div className="why-list">
-          {t.whyUs.items.map((item, i) => {
-            const icons = [<SlidersHorizontal />, <Headphones />, <Globe />, <Music />, <ArrowRight />];
-            return (
-              <div key={i} className="why-item fade-in" style={{ transitionDelay: `${i * 0.1}s` }}>
-                <div className="why-item-icon">
-                  {icons[i]}
-                </div>
-                <div className="why-item-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* IDEAL FOR */}
-      <section className="ideal-section">
-        <h2 className="section-title fade-in">{t.idealFor.title}</h2>
-        <div className="ideal-grid">
-          {t.idealFor.items.map((item, i) => (
-            <div key={i} className="ideal-item fade-in" style={{ transitionDelay: `${i * 0.05}s` }}>
-              <div className="ideal-item-icon"><MapPin size={18} /></div>
-              <span>{item}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* PERFORMANCE FORMAT */}
       <section className="format-section">
+        <div className="editorial-number">VI</div>
         <h2 className="section-title fade-in">{t.format.title}</h2>
         <ul className="format-list">
           {t.format.items.map((item, i) => (
@@ -163,55 +270,64 @@ function App() {
         </div>
       </section>
 
+      {/* ARTISTS */}
+      <section className="artists-section" id="artists">
+        <div className="editorial-number">II</div>
+        <h2 className="section-title fade-in">{t.artists.title}</h2>
+        <div className="artists-container">
+          <div className="artist-card fade-in">
+            <div className="artist-photo">
+              <img src="/Marlon.jpg" alt="Marlon" />
+            </div>
+            <div className="artist-info">
+              <h3>{t.artists.marlonName}</h3>
+              <p className="artist-role">{t.artists.marlonRole}</p>
+              {Array.isArray(t.artists.marlonBio) ? (
+                t.artists.marlonBio.map((p, idx) => <p key={idx} className="artist-bio" dangerouslySetInnerHTML={{ __html: p }}></p>)
+              ) : (
+                <p className="artist-bio" dangerouslySetInnerHTML={{ __html: t.artists.marlonBio }}></p>
+              )}
+            </div>
+          </div>
+          <div className="artist-card fade-in" style={{ transitionDelay: '0.2s' }}>
+            <div className="artist-photo">
+              <img src="/Oliver.jpg" alt="Oliver" />
+            </div>
+            <div className="artist-info">
+              <h3>{t.artists.oliverName}</h3>
+              <p className="artist-role">{t.artists.oliverRole}</p>
+              {Array.isArray(t.artists.oliverBio) ? (
+                t.artists.oliverBio.map((p, idx) => <p key={idx} className="artist-bio" dangerouslySetInnerHTML={{ __html: p }}></p>)
+              ) : (
+                <p className="artist-bio" dangerouslySetInnerHTML={{ __html: t.artists.oliverBio }}></p>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* GALLERY */}
       <section className="gallery-section">
         <h2 className="section-title fade-in">{t.gallery.title}</h2>
         <div className="gallery-grid">
-          {/* Individual photos */}
-          <div className="gallery-item fade-in" style={{ transitionDelay: '0.1s' }}>
-            <img src="/Marlon.jpg" alt="Marlon" />
-          </div>
-          <div className="gallery-item fade-in" style={{ transitionDelay: '0.2s' }}>
-            <img src="/Oliver.jpg" alt="Oliver" />
-          </div>
-          
           {/* Group / Performance photos */}
           {[
             'IMG-20260501-WA0003.jpg',
-            'IMG-20260501-WA0008.jpg',
-            'IMG-20260501-WA0009.jpg',
-            'IMG-20260501-WA0010.jpg',
             'IMG-20260501-WA0011.jpg',
-            'IMG-20260501-WA0012.jpg',
             'SAVE_20260501_200421.jpg',
-            'SAVE_20260501_200432.jpg',
             'SAVE_20260501_200503.jpg'
           ].map((imgName, idx) => (
             <div key={imgName} className="gallery-item fade-in" style={{ transitionDelay: `${0.3 + (idx * 0.05)}s` }}>
-              <img src={`/${imgName}`} alt={`MO2LIVE Gallery ${idx + 1}`} />
+              <img src={`/${imgName}`} alt={`MO2LIVE Gallery ${idx + 1}`} onError={(e) => { e.target.closest('.gallery-item').style.display = 'none'; }} />
             </div>
           ))}
         </div>
       </section>
 
-      {/* WATCH & LISTEN */}
-      <section className="watch-section" id="watch">
-        <h2 className="section-title fade-in">{t.watch.title}</h2>
-        <div className="video-container fade-in">
-          <iframe 
-            src="https://www.youtube.com/embed/gXX4BsDyIC4" 
-            title="MO²LIVE Performance" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-          ></iframe>
-        </div>
-        <a href="https://www.youtube.com/watch?v=gXX4BsDyIC4" target="_blank" rel="noopener noreferrer" className="btn btn-outline fade-in" style={{ marginTop: '2rem' }}>
-          <FaYoutube size={18} style={{ marginRight: '8px' }}/> {t.watch.btnYoutube}
-        </a>
-      </section>
-
       {/* BOOKING */}
       <section className="booking-section" id="booking">
+        <div className="editorial-line"></div>
+        <div className="editorial-number">VII</div>
         <h2 className="section-title fade-in">{t.booking.title}</h2>
         <div className="booking-content fade-in">
           <a href="mailto:mo2live.music@gmail.com" className="booking-email">
@@ -219,36 +335,33 @@ function App() {
             mo2live.music@gmail.com
           </a>
 
-          <form className="contact-form fade-in" onSubmit={(e) => e.preventDefault()}>
+          <form className="contact-form fade-in" onSubmit={onSubmit}>
             <div className="form-group">
               <label>{t.booking.formLabelName}</label>
-              <input type="text" className="form-control" />
+              <input type="text" name="name" className="form-control" required />
             </div>
             <div className="form-group">
               <label>{t.booking.formLabelCompany}</label>
-              <input type="text" className="form-control" />
+              <input type="text" name="company" className="form-control" />
             </div>
             <div className="form-group">
               <label>{t.booking.formLabelEmail}</label>
-              <input type="email" className="form-control" />
+              <input type="email" name="email" className="form-control" required />
             </div>
             <div className="form-group">
               <label>{t.booking.formLabelDetails}</label>
-              <textarea className="form-control" rows="3"></textarea>
+              <textarea name="message" className="form-control" rows="3" required></textarea>
             </div>
+            
             <button type="submit" className="btn btn-primary" style={{ marginTop: '1rem', alignSelf: 'flex-start' }}>
-              {t.booking.btnSend}
+              {formStatus === 'Sending...' ? '...' : t.booking.btnSend}
             </button>
+            {formStatus && (
+              <p style={{ marginTop: '1rem', color: formStatus.includes('Error') ? 'red' : 'var(--accent-gold)', fontSize: '0.9rem' }}>
+                {formStatus}
+              </p>
+            )}
           </form>
-
-          <div className="social-links fade-in">
-            <a href="https://www.instagram.com/mo2live.music/" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaInstagram size={24} /> @mo2live.music
-            </a>
-            <a href="https://www.youtube.com/@MO2livemusic" target="_blank" rel="noopener noreferrer" className="social-link">
-              <FaYoutube size={24} /> @MO2livemusic
-            </a>
-          </div>
         </div>
       </section>
 
@@ -257,6 +370,23 @@ function App() {
         <div className="footer-logo-container fade-in">
           <img src="/logo.jpg" alt="MO²LIVE" className="footer-logo-img" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
           <div className="footer-logo" style={{ display: 'none' }}>MO²LIVE</div>
+        </div>
+        <div className="social-links footer-socials fade-in" style={{ marginBottom: '2rem' }}>
+          <a href="https://open.spotify.com/artist/6JPKKMgXvydvrjDbnmRxON" target="_blank" rel="noopener noreferrer" className="social-link">
+            <FaSpotify size={24} />
+          </a>
+          <a href="https://www.instagram.com/mo2live.music/" target="_blank" rel="noopener noreferrer" className="social-link">
+            <FaInstagram size={24} />
+          </a>
+          <a href="https://www.youtube.com/@MO2livemusic" target="_blank" rel="noopener noreferrer" className="social-link">
+            <FaYoutube size={24} />
+          </a>
+          <a href="https://www.tiktok.com/@mo2.live" target="_blank" rel="noopener noreferrer" className="social-link">
+            <FaTiktok size={24} />
+          </a>
+          <a href="http://www.linkedin.com/in/mo2-live-a3a223405" target="_blank" rel="noopener noreferrer" className="social-link">
+            <FaLinkedin size={24} />
+          </a>
         </div>
         <div className="footer-taglines fade-in">
           <p className="footer-tagline-1">{t.footer.tagline1}</p>
