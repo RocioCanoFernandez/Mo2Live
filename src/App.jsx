@@ -94,17 +94,23 @@ function App() {
         </div>
       </section>
 
+      {/* INTRO DESCRIPTION */}
+      <section className="intro-section" style={{ backgroundColor: 'var(--bg-charcoal)', textAlign: 'center', padding: '6rem 5%' }}>
+        <p className="fade-in" style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', lineHeight: '1.6', maxWidth: '1000px', margin: '0 auto', color: 'var(--text-white)', fontWeight: 300 }}>
+          {t.intro.p1}
+        </p>
+      </section>
+
       {/* IDEAL FOR */}
       <section className="ideal-section" id="ideal">
         <div className="editorial-line"></div>
         <div className="editorial-number">V</div>
         <h2 className="section-title fade-in">{t.idealFor.title}</h2>
-        <div className="ideal-grid">
+        <div className="ideal-grid fade-in">
           {t.idealFor.items.map((item, i) => (
             <div 
               key={i} 
-              className={`ideal-item fade-in ${expandedIdeal === i ? 'expanded' : ''}`} 
-              style={{ transitionDelay: `${i * 0.05}s` }}
+              className={`ideal-item ${expandedIdeal === i ? 'expanded' : ''}`} 
               onClick={() => setExpandedIdeal(expandedIdeal === i ? null : i)}
             >
               <div className="ideal-item-header">
@@ -171,7 +177,7 @@ function App() {
             <div className="video-sub">
               <div className="video-container">
                 <iframe 
-                  src="https://www.youtube.com/embed/gXX4BsDyIC4" 
+                  src="https://www.youtube.com/embed/c_gF8bJn2QQ" 
                   title={t.watch.videos[1].title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen
@@ -182,7 +188,7 @@ function App() {
             <div className="video-sub">
               <div className="video-container">
                 <iframe 
-                  src="https://www.youtube.com/embed/gXX4BsDyIC4" 
+                  src="https://www.youtube.com/embed/qZ5upRs3DGM" 
                   title={t.watch.videos[2].title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen
@@ -312,10 +318,10 @@ function App() {
         <div className="gallery-grid">
           {/* Group / Performance photos */}
           {[
-            'IMG-20260501-WA0003.jpg',
-            'IMG-20260501-WA0011.jpg',
-            'SAVE_20260501_200421.jpg',
-            'SAVE_20260501_200503.jpg'
+            'IMG-20260501-WA0009.jpg',
+            'IMG-20260501-WA0010.jpg',
+            'IMG-20260501-WA0012.jpg',
+            'SAVE_20260501_200432.jpg'
           ].map((imgName, idx) => (
             <div key={imgName} className="gallery-item fade-in" style={{ transitionDelay: `${0.3 + (idx * 0.05)}s` }}>
               <img src={`/${imgName}`} alt={`MO2LIVE Gallery ${idx + 1}`} onError={(e) => { e.target.closest('.gallery-item').style.display = 'none'; }} />
@@ -373,19 +379,19 @@ function App() {
         </div>
         <div className="social-links footer-socials fade-in" style={{ marginBottom: '2rem' }}>
           <a href="https://open.spotify.com/artist/6JPKKMgXvydvrjDbnmRxON" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaSpotify size={24} />
+            <FaSpotify size={32} />
           </a>
           <a href="https://www.instagram.com/mo2live.music/" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaInstagram size={24} />
+            <FaInstagram size={32} />
           </a>
           <a href="https://www.youtube.com/@MO2livemusic" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaYoutube size={24} />
+            <FaYoutube size={32} />
           </a>
           <a href="https://www.tiktok.com/@mo2.live" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaTiktok size={24} />
+            <FaTiktok size={32} />
           </a>
           <a href="http://www.linkedin.com/in/mo2-live-a3a223405" target="_blank" rel="noopener noreferrer" className="social-link">
-            <FaLinkedin size={24} />
+            <FaLinkedin size={32} />
           </a>
         </div>
         <div className="footer-taglines fade-in">

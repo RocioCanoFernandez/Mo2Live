@@ -7,6 +7,9 @@ export const translations = {
       btnWatch: "Watch & Listen",
       btnBooking: "Request Proposal"
     },
+    intro: {
+      p1: "MO² is an experimental contemporary duo fusing Cool Jazz, Afro Jazz, Afro Latin, and a rich palette of electronica—from House to Electro House—with live trumpet, keyboards, and percussion. Creating unique musical experiences seeking a contemporary sound with a touch of borderless elegance."
+    },
     about: {
       title: "Sound That Elevates The Space",
       p1: "MO²LIVE transcends traditional live performance, emerging as a contemporary duo that seamlessly fuses the organic resonance of the trumpet and keys with the cutting-edge precision of live electronic sequencing. The result is a profoundly refined, minimalist, and deeply immersive sonic journey.",
@@ -159,6 +162,9 @@ export const translations = {
       tagline: "Fusionando cool jazz, afro jazz, ritmos afro-latinos y electrónica en vivo",
       btnWatch: "Ver y escuchar",
       btnBooking: "Solicitar propuesta"
+    },
+    intro: {
+      p1: "MO² es un dúo experimental y contemporáneo que fusiona Cool Jazz, Afro Jazz, Afro Latin, y una rica paleta de electrónica —desde House hasta Electro House— con trompeta, teclados y percusión en vivo. Creando experiencias musicales únicas buscando un sonido contemporáneo con un toque de elegancia sin fronteras."
     },
     about: {
       title: "Sonido Que Eleva El Espacio",
