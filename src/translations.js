@@ -110,18 +110,18 @@ export const translations = {
       title: "Technical Requirements",
       venueProvides: "The venue provides:",
       venueItems: [
-        "High-fidelity PA system",
+        "Professional sound system",
         "Professional audio mixer",
-        "1–2 DI boxes",
-        "Accessible power outlets",
-        "Minimal performance space (~2×2 m)"
+        "Stage lighting",
+        "Power outlet (min. 5 sockets)",
+        "Minimal stage size (2×2 m)"
       ],
       mo2Provides: "MO²LIVE provides:",
       mo2Items: [
-        "All instruments and controllers",
-        "Multipad & bespoke stands",
-        "Internal cabling",
-        "Optional in-ear monitoring systems"
+        "Instruments: Keyboards, pad, trumpet & djembe",
+        "Microphones & audio interfaces",
+        "In-ear monitoring systems",
+        "Internal cabling and stands"
       ]
     },
     location: {
@@ -266,18 +266,18 @@ export const translations = {
       title: "Requisitos Técnicos",
       venueProvides: "El espacio proporciona:",
       venueItems: [
-        "Sistema PA de alta fidelidad",
+        "Sistema de sonido profesional",
         "Mesa de sonido profesional",
-        "1–2 cajas DI",
-        "Tomas de corriente accesibles",
-        "Espacio mínimo de actuación (~2×2 m)"
+        "Iluminación escénica",
+        "Toma de corriente (mín. 5 entradas)",
+        "Escenario mínimo de 2×2 m"
       ],
       mo2Provides: "MO²LIVE proporciona:",
       mo2Items: [
-        "Todos los instrumentos y controladores",
-        "Multipad y soportes a medida",
-        "Cableado interno",
-        "Sistemas de monitorización in-ear (opcional)"
+        "Instrumentos: Teclados, pad, trompeta y yembe",
+        "Micrófonos e interfaces de audio",
+        "Sistema de monitorización in-ear",
+        "Cableado interno y soportes"
       ]
     },
     location: {
