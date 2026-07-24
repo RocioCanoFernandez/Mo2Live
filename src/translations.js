@@ -122,7 +122,8 @@ export const translations = {
         "Microphones & audio interfaces",
         "In-ear monitoring systems",
         "Internal cabling and stands"
-      ]
+      ],
+      internationalNote: "* Note for international bookings: MO²LIVE travels with all core technical equipment (audio interfaces, custom microphones, in-ears, laptop, Multipad, and trumpet). For flight logistics, we may request the venue to provide bulky instruments (such as the Djembe). If unavailable, our technical setup is 100% adaptable."
     },
     location: {
       p1: "Proudly based in Barcelona.",
@@ -278,7 +279,8 @@ export const translations = {
         "Micrófonos e interfaces de audio",
         "Sistema de monitorización in-ear",
         "Cableado interno y soportes"
-      ]
+      ],
+      internationalNote: "* Nota para actuaciones internacionales: MO²LIVE viaja con todo el sistema técnico central (interfaces de audio, micrófonos propios, in-ears, portátil, Multipad y trompeta). Por motivos logísticos en vuelos, es posible que solicitemos a la sala instrumentos voluminosos (como el Yembe). En caso de no disponer de ellos, nuestra configuración técnica es 100% adaptable."
     },
     location: {
       p1: "Orgullosamente basados en Barcelona.",
