@@ -8,7 +8,7 @@ export const translations = {
       btnBooking: "Request Proposal"
     },
     intro: {
-      p1: "MO² is an experimental contemporary duo fusing Cool Jazz, Afro Jazz, Afro Latin, and a rich palette of electronica—from House to Electro House—with live trumpet, keyboards, and percussion. Creating unique musical experiences seeking a contemporary sound with a touch of borderless elegance."
+      p1: "MO² is an experimental contemporary duo of original unreleased music fusing Cool Jazz, Afro Jazz, Afro Latin, and a rich palette of electronica—from House to Electro House—with live trumpet, keyboards, and percussion. Creating unique musical experiences seeking a contemporary sound with a touch of borderless elegance."
     },
     about: {
       title: "Sound That Elevates The Space",
@@ -88,12 +88,14 @@ export const translations = {
     idealFor: {
       title: "Ideal For",
       items: [
-        { title: "Premium Hotels, Rooftops & Private Venues", desc: "Sophisticated atmospheres for receptions, dinners, and sunset sessions." },
-        { title: "Exclusive Corporate Experiences", desc: "Live music tailored for business meetings and brand presentations." },
-        { title: "High-End Brand Activations", desc: "A sonic and visual experience for product launches and openings." },
-        { title: "Luxury & Boutique Events", desc: "A contemporary instrumental proposal for unique celebrations." },
-        { title: "Fashion Shows & Art Exhibitions", desc: "Live music that connects with the aesthetic narrative of the production." },
-        { title: "Curated Cultural Programs", desc: "An instrumental live act blending jazz, afro-latin rhythms, and electronica." }
+        { title: "Luxury Hotels, Rooftops & Private Villas", desc: "Receptions, cocktails, dinners, sunsets, and exclusive events in premium spaces." },
+        { title: "Corporate Events & Networking", desc: "Conventions, presentations, company dinners, networking, and client experiences." },
+        { title: "Premium Brands & Product Launches", desc: "Product launches, openings, brand activations, showrooms, and branded events." },
+        { title: "Beach Clubs & Sunset Sessions", desc: "Sunset sessions, pool parties, brunches, and lifestyle experiences by the sea." },
+        { title: "Private Events", desc: "Weddings, anniversaries, private parties, and exclusive celebrations with live music." },
+        { title: "Fashion, Art & Design", desc: "Runways, exhibitions, galleries, architecture, interior design, and creative productions." },
+        { title: "Gastronomy & Culinary Experiences", desc: "Signature restaurants, gastronomic hotels, wine-paired dinners, and culinary events." },
+        { title: "Festivals & Cultural Programming", desc: "Festivals, cultural series, auditoriums, institutional events, and musical experiences." }
       ]
     },
     format: {
@@ -165,7 +167,7 @@ export const translations = {
       btnBooking: "Solicitar propuesta"
     },
     intro: {
-      p1: "MO² es un dúo experimental y contemporáneo que fusiona Cool Jazz, Afro Jazz, Afro Latin, y una rica paleta de electrónica —desde House hasta Electro House— con trompeta, teclados y percusión en vivo. Creando experiencias musicales únicas buscando un sonido contemporáneo con un toque de elegancia sin fronteras."
+      p1: "MO² es un dúo experimental y contemporáneo de música inédita que fusiona Cool Jazz, Afro Jazz, Afro Latin, y una rica paleta de electrónica —desde House hasta Electro House— con trompeta, teclados y percusión en vivo. Creando experiencias musicales únicas buscando un sonido contemporáneo con un toque de elegancia sin fronteras."
     },
     about: {
       title: "Sonido Que Eleva El Espacio",
@@ -245,12 +247,14 @@ export const translations = {
     idealFor: {
       title: "Ideal Para",
       items: [
-        { title: "Hoteles premium, rooftops y espacios privados", desc: "Ambientes sofisticados para recepciones, cenas y sunset sessions." },
-        { title: "Experiencias corporativas", desc: "Música en directo adaptada a eventos de empresa y presentaciones de marca." },
-        { title: "Activaciones de marca", desc: "Una experiencia sonora y visual para lanzamientos, inauguraciones y presentaciones de producto." },
-        { title: "Eventos de lujo y experiencias boutique", desc: "Una propuesta instrumental contemporánea para celebraciones que buscan un formato diferente." },
-        { title: "Moda, arte y espacios culturales", desc: "Música en directo para desfiles, exposiciones e instalaciones." },
-        { title: "Festivales y programaciones musicales", desc: "Un directo instrumental con influencias de jazz, ritmos afrolatinos y electrónica." }
+        { title: "Hoteles de lujo, rooftops y villas privadas", desc: "Recepciones, cócteles, cenas, sunsets y eventos exclusivos en espacios premium." },
+        { title: "Eventos corporativos y networking", desc: "Convenciones, presentaciones, cenas de empresa, networking y experiencias para clientes." },
+        { title: "Marcas premium y lanzamientos", desc: "Lanzamientos de producto, inauguraciones, activaciones, showrooms y eventos de marca." },
+        { title: "Beach Clubs y Sunset Sessions", desc: "Sesiones al atardecer, pool parties, brunches y experiencias lifestyle junto al mar." },
+        { title: "Eventos privados", desc: "Bodas, aniversarios, fiestas privadas y celebraciones exclusivas con música en directo." },
+        { title: "Moda, arte y diseño", desc: "Desfiles, exposiciones, galerías, arquitectura, interiorismo y producciones creativas." },
+        { title: "Gastronomía y experiencias culinarias", desc: "Restaurantes de autor, hoteles gastronómicos, cenas maridadas y eventos gastronómicos." },
+        { title: "Festivales y programación cultural", desc: "Festivales, ciclos culturales, auditorios, eventos institucionales y experiencias musicales." }
       ]
     },
     format: {
