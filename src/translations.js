@@ -33,6 +33,7 @@ export const translations = {
       oliverBio: [
         "Oliver Barranco Trumpet is a Cuban trumpeter, composer, and music producer based in Barcelona, with over 20 years of international experience.",
         "He has shared the stage at the carnivals of Las Palmas de Gran Canaria and Tenerife alongside renowned figures such as Nicky Jam and Sebastián Yatra, and has shined at the Moscow International Jazz Festival and the Lucerne World Music Festival.",
+        "In 2026, he was officially invited by the Delegation of the European Union to represent Spain at the 26th European Music Festival in Algiers, performing an acclaimed, sold-out concert at the Théâtre National Algérien.",
         "His participation in the Papal Vigil at the Olympic Stadium before more than 50,000 people, and his collaboration on León Larregui's Latin Grammy-nominated album 'Prismarama', have marked his global projection.",
         "Oliver combines the richness of Cuban music with a contemporary vision, taking his trumpet and art to audiences worldwide with passion and authenticity.",
         "<strong>Digital Presence</strong><br/>Oliver Barranco shares his music and live projects across platforms such as Spotify, YouTube and Instagram.",
@@ -192,6 +193,7 @@ export const translations = {
       oliverBio: [
         "Oliver Barranco Trumpet es un trompetista, compositor y productor musical cubano radicado en Barcelona, con más de 20 años de trayectoria internacional.",
         "Ha compartido escenario en los carnavales de Las Palmas de Gran Canaria y Tenerife, junto a figuras de renombre como Nicky Jam y Sebastián Yatra, y ha brillado en el Festival de Jazz Internacional de Moscú y el Festival de World Music en Lucerna.",
+        "En 2026, ha sido invitado oficialmente por la Delegación de la Unión Europea como representante de España en el 26º Festival Europeo de Música de Argelia, ofreciendo un histórico concierto con entradas agotadas (Sold Out) en el Théâtre National Algérien.",
         "Su participación en la vigilia papal en el Estadio Olímpico, ante más de 50 mil personas, y su colaboración en el álbum Prismarama de León Larregui, nominado al Latin Grammy, han marcado su proyección global.",
         "Oliver combina la riqueza de la música cubana con una mirada contemporánea, llevando su trompeta y su arte a públicos de todo el mundo, con pasión y autenticidad.",
         "<strong>Presencia Digital</strong><br/>Oliver Barranco comparte su música y proyectos en directo a través de plataformas como Spotify, YouTube e Instagram.",
