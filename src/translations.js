@@ -1,3 +1,7 @@
+// Archivo de traducciones (Inglés y Español) para la web oficial de MO²LIVE (https://www.mo2live.com/)
+// Actualizado para reflejar con precisión la instrumentación real de cada artista en directo:
+// - Marlon Rodríguez: Multipad electrónico, percusión acústica, teclados y voces.
+// - Oliver Barranco: Vientos (trompeta y fliscorno), teclados y voces.
 export const translations = {
   en: {
     hero: {
@@ -8,11 +12,11 @@ export const translations = {
       btnBooking: "Request Proposal"
     },
     intro: {
-      p1: "MO² is an experimental contemporary duo of original unreleased music fusing Cool Jazz, Afro Jazz, Afro Latin, and a rich palette of electronica—from House to Electro House—with live trumpet, keyboards, and percussion. Creating unique musical experiences seeking a contemporary sound with a touch of borderless elegance."
+      p1: "MO² is an experimental contemporary duo of original unreleased music fusing Cool Jazz, Afro Jazz, Afro Latin, and a rich palette of electronica—from House to Electro House—with live brass (trumpet and flugelhorn), electronic multipad, acoustic percussion, keyboards, and vocals. Creating unique musical experiences seeking a contemporary sound with a touch of borderless elegance."
     },
     about: {
       title: "Sound That Elevates The Space",
-      p1: "MO²LIVE transcends traditional live performance, emerging as a contemporary duo that seamlessly fuses the organic resonance of the trumpet and keys with the cutting-edge precision of live electronic sequencing. The result is a profoundly refined, minimalist, and deeply immersive sonic journey.",
+      p1: "MO²LIVE transcends traditional live performance, emerging as a contemporary duo that seamlessly fuses the organic resonance of trumpet, flugelhorn, acoustic percussion, keyboards, and vocals with the cutting-edge precision of live electronic sequencing. The result is a profoundly refined, minimalist, and deeply immersive sonic journey.",
       p2: "Meticulously crafted for luxury environments, exclusive boutique events, and design-conscious audiences, MO²LIVE does not merely perform music—they sculpt the very atmosphere of the room, turning sound into an architectural element."
     },
     artists: {
@@ -25,11 +29,11 @@ export const translations = {
         "He has collaborated and toured internationally with artists and projects including Jay Kalo (Lisbon tours and jazz festivals in Central Europe), La Propuesta, Chillin, Son Iroso, El Vitti, La Banda del Pulpo, Contratemps (touring Spain and Portugal), Salsa Ilegal (France-based), and DJ Yoshi Brown.",
         "He has also performed with MO²LIVE at corporate events for companies such as Inditex and Glovo, and toured across Spain and Europe with Cuban urban artists Dany Ome & Kevincito. He is part of ongoing projects with Joao del Monte and pianist Raydel Abreu.",
         "<strong>Digital Presence</strong><br/>Marletecerro releases original music across platforms such as Spotify and YouTube.",
-        "<strong>Live Performance</strong><br/>Using electronic multipads, layered rhythms and immersive sound design, he creates refined, contemporary live experiences.<br/>He doesn't just play rhythm — he makes it unforgettable.",
+        "<strong>Live Performance</strong><br/>Using electronic multipad, acoustic percussion, keyboards, vocals and immersive sound design, he creates refined, contemporary live experiences.<br/>He doesn't just play rhythm — he makes it unforgettable.",
         "<em>Based in Barcelona · Available internationally</em>"
       ],
       oliverName: "Oliver Barranco",
-      oliverRole: "Trumpeter, Composer & Music Producer",
+      oliverRole: "Trumpeter, Multi-Instrumentalist, Composer & Music Producer",
       oliverBio: [
         "Oliver Barranco Trumpet is a Cuban trumpeter, composer, and music producer based in Barcelona, with over 20 years of international experience.",
         "He has shared the stage at the carnivals of Las Palmas de Gran Canaria and Tenerife alongside renowned figures such as Nicky Jam and Sebastián Yatra, and has shined at the Moscow International Jazz Festival and the Lucerne World Music Festival.",
@@ -37,7 +41,7 @@ export const translations = {
         "His participation in the Papal Vigil at the Olympic Stadium before more than 50,000 people, and his collaboration on León Larregui's Latin Grammy-nominated album 'Prismarama', have marked his global projection.",
         "Oliver combines the richness of Cuban music with a contemporary vision, taking his trumpet and art to audiences worldwide with passion and authenticity.",
         "<strong>Digital Presence</strong><br/>Oliver Barranco shares his music and live projects across platforms such as Spotify, YouTube and Instagram.",
-        "<strong>Live Performance</strong><br/>Through trumpet, effects and real-time musical interaction, he creates elegant, cinematic and emotionally resonant live moments.<br/>He doesn't just play the trumpet — he gives the space its voice.",
+        "<strong>Live Performance</strong><br/>Through brass (trumpet and flugelhorn), keyboards, vocals, effects and real-time musical interaction, he creates elegant, cinematic and emotionally resonant live moments.<br/>He doesn't just play the trumpet — he gives the space its voice.",
         "<em>Based in Barcelona · Available internationally</em>"
       ]
     },
@@ -102,9 +106,9 @@ export const translations = {
     format: {
       title: "Performance Format",
       items: [
-        "Live Trumpet & Brass Textures",
-        "Keys & Harmonic Progressions",
-        "Multipad & Electronic Layering",
+        "Live Brass (Trumpet & Flugelhorn)",
+        "Electronic Multipad & Acoustic Percussion",
+        "Keyboards, Harmonic Progressions & Vocals",
         "Real-Time Looping & Sound Design"
       ],
       note: "Fully customizable sets tailored to the natural flow of your event (Ambient → Cinematic Build → Highlight Moments)."
@@ -121,12 +125,12 @@ export const translations = {
       ],
       mo2Provides: "MO²LIVE provides:",
       mo2Items: [
-        "Instruments: Keyboards, pad, trumpet & djembe",
-        "Microphones & audio interfaces",
+        "Instruments: Brass (trumpet & flugelhorn), electronic multipad, acoustic percussion & keyboards",
+        "Microphones (brass & vocals) & audio interfaces",
         "In-ear monitoring systems",
         "Internal cabling and stands"
       ],
-      internationalNote: "* Note for international bookings: MO²LIVE travels with all core technical equipment (audio interfaces, custom microphones, in-ears, laptop, Multipad, and trumpet). For flight logistics, we may request the venue to provide bulky instruments (such as the Djembe). If unavailable, our technical setup is 100% adaptable."
+      internationalNote: "* Note for international bookings: MO²LIVE travels with all core technical equipment (audio interfaces, custom microphones, in-ears, laptop, electronic Multipad, keyboards, trumpet and flugelhorn). For flight logistics, we may request the venue to provide bulky acoustic percussion instruments if required. If unavailable, our technical setup is 100% adaptable."
     },
     location: {
       p1: "Proudly based in Barcelona.",
@@ -168,11 +172,11 @@ export const translations = {
       btnBooking: "Solicitar propuesta"
     },
     intro: {
-      p1: "MO² es un dúo experimental y contemporáneo de música inédita que fusiona Cool Jazz, Afro Jazz, Afro Latin, y una rica paleta de electrónica —desde House hasta Electro House— con trompeta, teclados y percusión en vivo. Creando experiencias musicales únicas buscando un sonido contemporáneo con un toque de elegancia sin fronteras."
+      p1: "MO² es un dúo experimental y contemporáneo de música inédita que fusiona Cool Jazz, Afro Jazz, Afro Latin, y una rica paleta de electrónica —desde House hasta Electro House— con vientos (trompeta y fliscorno), multipad electrónico, percusión acústica, teclados y voces en vivo. Creando experiencias musicales únicas buscando un sonido contemporáneo con un toque de elegancia sin fronteras."
     },
     about: {
       title: "Sonido Que Eleva El Espacio",
-      p1: "MO²LIVE trasciende el formato tradicional de música en vivo, presentándose como un dúo contemporáneo que fusiona la resonancia orgánica de la trompeta y los teclados con la precisión de la electrónica en directo. El resultado es un viaje sonoro profundamente refinado, minimalista e inmersivo.",
+      p1: "MO²LIVE trasciende el formato tradicional de música en vivo, presentándose como un dúo contemporáneo que fusiona la resonancia orgánica de la trompeta, el fliscorno, la percusión acústica, los teclados y las voces con la precisión de la electrónica en directo. El resultado es un viaje sonoro profundamente refinado, minimalista e inmersivo.",
       p2: "Diseñado meticulosamente para entornos de lujo, eventos boutique exclusivos y audiencias sensibles a la estética, MO²LIVE no se limita a tocar música: esculpe la atmósfera de la sala, convirtiendo el sonido en un elemento arquitectónico más."
     },
     artists: {
@@ -185,11 +189,11 @@ export const translations = {
         "Ha colaborado y girado internacionalmente con artistas y proyectos que incluyen a Jay Kalo (giras en Lisboa y festivales de jazz en Europa Central), La Propuesta, Chillin, Son Iroso, El Vitti, La Banda del Pulpo, Contratemps (gira por España y Portugal), Salsa Ilegal (con sede en Francia) y DJ Yoshi Brown.",
         "También ha actuado con MO²LIVE en eventos corporativos para empresas como Inditex y Glovo, y ha girado por España y Europa con los artistas urbanos cubanos Dany Ome & Kevincito. Forma parte de proyectos en curso con Joao del Monte y el pianista Raydel Abreu.",
         "<strong>Presencia Digital</strong><br/>Marletecerro lanza música original en plataformas como Spotify y YouTube.",
-        "<strong>Actuaciones en Directo</strong><br/>Utilizando multipads electrónicos, capas de ritmos y diseño sonoro inmersivo, crea experiencias en vivo refinadas y contemporáneas.<br/>No se limita a tocar el ritmo, lo hace inolvidable.",
+        "<strong>Actuaciones en Directo</strong><br/>Utilizando multipad electrónico, percusión acústica, teclados, voces y diseño sonoro inmersivo, crea experiencias en vivo refinadas y contemporáneas.<br/>No se limita a tocar el ritmo, lo hace inolvidable.",
         "<em>Afincado en Barcelona · Disponible a nivel internacional</em>"
       ],
       oliverName: "Oliver Barranco",
-      oliverRole: "Trompetista, Compositor y Productor Musical",
+      oliverRole: "Trompetista, Multiinstrumentista, Compositor y Productor Musical",
       oliverBio: [
         "Oliver Barranco Trumpet es un trompetista, compositor y productor musical cubano radicado en Barcelona, con más de 20 años de trayectoria internacional.",
         "Ha compartido escenario en los carnavales de Las Palmas de Gran Canaria y Tenerife, junto a figuras de renombre como Nicky Jam y Sebastián Yatra, y ha brillado en el Festival de Jazz Internacional de Moscú y el Festival de World Music en Lucerna.",
@@ -197,7 +201,7 @@ export const translations = {
         "Su participación en la vigilia papal en el Estadio Olímpico, ante más de 50 mil personas, y su colaboración en el álbum Prismarama de León Larregui, nominado al Latin Grammy, han marcado su proyección global.",
         "Oliver combina la riqueza de la música cubana con una mirada contemporánea, llevando su trompeta y su arte a públicos de todo el mundo, con pasión y autenticidad.",
         "<strong>Presencia Digital</strong><br/>Oliver Barranco comparte su música y proyectos en directo a través de plataformas como Spotify, YouTube e Instagram.",
-        "<strong>Actuaciones en Directo</strong><br/>A través de la trompeta, efectos e interacción musical en tiempo real, crea momentos en vivo elegantes, cinematográficos y con gran resonancia emocional.<br/>No se limita a tocar la trompeta: le da voz al espacio.",
+        "<strong>Actuaciones en Directo</strong><br/>A través de vientos (trompeta y fliscorno), teclados, voces, efectos e interacción musical en tiempo real, crea momentos en vivo elegantes, cinematográficos y con gran resonancia emocional.<br/>No se limita a tocar la trompeta: le da voz al espacio.",
         "<em>Afincado en Barcelona · Disponible a nivel internacional</em>"
       ]
     },
@@ -207,7 +211,7 @@ export const translations = {
       cards: [
         {
           title: "Paisajes Sonoros",
-          desc: "Texturas delicadas y atmosféricas que envuelden la sala, creando un estado de ánimo inmaculado sin resultar nunca intrusivas."
+          desc: "Texturas delicadas y atmosféricas que envuelven la sala, creando un estado de ánimo inmaculado sin resultar nunca intrusivas."
         },
         {
           title: "Crescendos Cinematográficos",
@@ -262,9 +266,9 @@ export const translations = {
     format: {
       title: "Formato de Actuación",
       items: [
-        "Trompeta en Directo y Texturas de Viento",
-        "Teclados y Progresiones Armónicas",
-        "Multipad y Capas Electrónicas",
+        "Vientos en Directo (Trompeta y Fliscorno)",
+        "Multipad Electrónico y Percusión Acústica",
+        "Teclados, Progresiones Armónicas y Voces",
         "Looping y Diseño Sonoro en Tiempo Real"
       ],
       note: "Sets completamente personalizables, adaptados al flujo natural de tu evento (Ambiente → Desarrollo Cinematográfico → Momentos Destacados)."
@@ -281,12 +285,12 @@ export const translations = {
       ],
       mo2Provides: "MO²LIVE proporciona:",
       mo2Items: [
-        "Instrumentos: Teclados, pad, trompeta y yembe",
-        "Micrófonos e interfaces de audio",
+        "Instrumentos: Vientos (trompeta y fliscorno), multipad electrónico, percusión acústica y teclados",
+        "Micrófonos (vientos y voces) e interfaces de audio",
         "Sistema de monitorización in-ear",
         "Cableado interno y soportes"
       ],
-      internationalNote: "* Nota para actuaciones internacionales: MO²LIVE viaja con todo el sistema técnico central (interfaces de audio, micrófonos propios, in-ears, portátil, Multipad y trompeta). Por motivos logísticos en vuelos, es posible que solicitemos a la sala instrumentos voluminosos (como el Yembe). En caso de no disponer de ellos, nuestra configuración técnica es 100% adaptable."
+      internationalNote: "* Nota para actuaciones internacionales: MO²LIVE viaja con todo el sistema técnico central (interfaces de audio, micrófonos propios, in-ears, portátil, Multipad electrónico, teclados, trompeta y fliscorno). Por motivos logísticos en vuelos, es posible que solicitemos a la sala algún instrumento de percusión acústica voluminoso en caso necesario. De no estar disponible, nuestra configuración técnica es 100% adaptable."
     },
     location: {
       p1: "Orgullosamente basados en Barcelona.",
